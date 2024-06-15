@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Comprehensive Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="calculator-display" id="display">0</div>
-        <div class="calculator-buttons">
-            <button class="button" data-value="7">7</button>
-            <button class="button" data-value="8">8</button>
-            <button class="button" data-value="9">9</button>
-            <button class="button" data-value="/">÷</button>
-            <button class="button" data-value="4">4</button>
-            <button class="button" data-value="5">5</button>
-            <button class="button" data-value="6">6</button>
-            <button class="button" data-value="*">×</button>
-            <button class="button" data-value="1">1</button>
-            <button class="button" data-value="2">2</button>
-            <button class="button" data-value="3">3</button>
-            <button class="button" data-value="-">-</button>
-            <button class="button" data-value="0">0</button>
-            <button class="button" data-value=".">.</button>
-            <button class="button" data-value="=">=</button>
-            <button class="button" data-value="+">+</button>
-            <button class="button clear" data-value="C">C</button>
+    <div class="container">
+        <h1>Comprehensive Calculator</h1>
+
+        <!-- Standard Calculator -->
+        <div id="standard-calculator">
+            <h2>Standard Calculator</h2>
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <!-- Buttons will be added dynamically by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Unit Converters -->
+        <div id="unit-converters">
+            <h2>Unit Converters</h2>
+            <div class="converter">
+                <label for="unit-type">Choose a unit type:</label>
+                <select id="unit-type">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="volume">Volume</option>
+                    <option value="temperature">Temperature</option>
+                </select>
+
+                <div id="converter-fields">
+                    <!-- Conversion fields will be added dynamically by JavaScript -->
+                </div>
+            </div>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
