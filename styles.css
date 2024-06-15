@@ -39,28 +39,27 @@ body {
     gap: 10px;
 }
 
-button {
+.buttons button {
     width: 100%;
     padding: 20px;
     font-size: 18px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f2f2f2;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
+.buttons button:hover {
+    background-color: #e0e0e0;
 }
 
-.converter {
-    display: inline-block;
-    text-align: left;
-    margin-top: 20px;
-}
-
-label, select, input {
+a {
     display: block;
-    margin: 10px 0;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

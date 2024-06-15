@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive Calculator</title>
+    <title>Standard Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Comprehensive Calculator</h1>
-
-        <!-- Standard Calculator -->
+        <h1>Standard Calculator</h1>
         <div id="standard-calculator">
-            <h2>Standard Calculator</h2>
             <div class="calculator">
                 <input type="text" id="display" disabled>
                 <div class="buttons">
@@ -20,26 +17,8 @@
                 </div>
             </div>
         </div>
-
-        <!-- Unit Converters -->
-        <div id="unit-converters">
-            <h2>Unit Converters</h2>
-            <div class="converter">
-                <label for="unit-type">Choose a unit type:</label>
-                <select id="unit-type">
-                    <option value="length">Length</option>
-                    <option value="weight">Weight</option>
-                    <option value="volume">Volume</option>
-                    <option value="temperature">Temperature</option>
-                </select>
-
-                <div id="converter-fields">
-                    <!-- Conversion fields will be added dynamically by JavaScript -->
-                </div>
-            </div>
-        </div>
+        <a href="unit_calculator.html">Go to Unit Converter</a>
     </div>
-
-    <script src="script.js"></script>
+    <script src="standard_calculator.js"></script>
 </body>
 </html>
